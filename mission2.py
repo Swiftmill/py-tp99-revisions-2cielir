@@ -13,14 +13,33 @@ TAILLE = 8
 
 # --- 1. construction de la matrice eteinte ---
 matrice = []
-# TODO : pour chaque ligne, construire une liste de TAILLE zeros
-#        puis l'ajouter a matrice avec .append()
-
+for i in range(TAILLE):
+    ligne = []
+    for j in range(TAILLE):
+        ligne.append(0)
+    matrice.append(ligne)
 
 # --- 2. affichage ---
-# TODO : deux boucles imbriquees ; on construit une chaine texte pour
-#        la ligne courante, puis on l'affiche avec print(texte)
-
+for i in range(TAILLE):
+    texte = ""
+    for j in range(TAILLE):
+        if matrice[i][j] == 1:
+            texte = texte + "# "
+        else:
+            texte = texte + ". "
+    print(texte)
 
 # --- 3. allumage de deux LED puis nouvel affichage ---
-# TODO
+matrice[2][3] = 1
+matrice[5][5] = 1
+
+print()
+
+for i in range(TAILLE):
+    texte = ""
+    for j in range(TAILLE):
+        if matrice[i][j] == 1:
+            texte = texte + "# "
+        else:
+            texte = texte + ". "
+    print(texte)
