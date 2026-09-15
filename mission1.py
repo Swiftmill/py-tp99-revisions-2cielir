@@ -17,4 +17,16 @@ TAILLE = 8
 ligne = int(input("Ligne : "))
 colonne = int(input("Colonne : "))
 
+if ligne<0 or ligne >7 or colonne <0 or colonne >7:
+    print("Erreur : coordonnees hors de la matrice")
+
+elif ligne==0 or ligne ==7 or colonne ==0 or colonne == 7:
+    print("LED de bordure")
+
+elif ligne==colonne:
+    print("LED de la diagonale")
+
+else:
+    print("LED interne")
+
 # TODO : ecrire la structure alternative (if / elif / else)
