@@ -18,23 +18,19 @@ for i in range(TAILLE):
     for j in range(TAILLE):
         ligne.append(0)
     matrice.append(ligne)
-
 # --- 2. affichage ---
 for i in range(TAILLE):
     texte = ""
     for j in range(TAILLE):
         if matrice[i][j] == 1:
-            texte = texte + "# "
+            texte = texte+"# "
         else:
-            texte = texte + ". "
+            texte = texte+". "
     print(texte)
-
 # --- 3. allumage de deux LED puis nouvel affichage ---
 matrice[2][3] = 1
 matrice[5][5] = 1
-
 print()
-
 for i in range(TAILLE):
     texte = ""
     for j in range(TAILLE):
