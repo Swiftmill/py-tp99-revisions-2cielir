@@ -35,6 +35,7 @@ for etape in range(ETAPES):
     # TODO : decaler chaque ligne d'une colonne vers la gauche.
     #        Indice : memoriser matrice[i][0] AVANT de decaler,
     #        puis le replacer en derniere colonne.
+        
 
     print()
     # TODO : afficher la matrice apres decalage
